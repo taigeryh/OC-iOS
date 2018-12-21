@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F249DF321C4FDF900E644A5 /* MethodSwizzlingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F249DF221C4FDF900E644A5 /* MethodSwizzlingObject.m */; };
+		4F79DF6E21C8FF9B00F1B647 /* TestMsgForwardingObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F79DF6D21C8FF9B00F1B647 /* TestMsgForwardingObj.m */; };
 		4F8936C521C3A0AD00201B02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8936C421C3A0AD00201B02 /* AppDelegate.m */; };
 		4F8936C821C3A0AD00201B02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8936C721C3A0AD00201B02 /* ViewController.m */; };
 		4F8936CB21C3A0AD00201B02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F8936C921C3A0AD00201B02 /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		4F249DF121C4FDF900E644A5 /* MethodSwizzlingObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingObject.h; sourceTree = "<group>"; };
 		4F249DF221C4FDF900E644A5 /* MethodSwizzlingObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingObject.m; sourceTree = "<group>"; };
+		4F79DF6C21C8FF9B00F1B647 /* TestMsgForwardingObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMsgForwardingObj.h; sourceTree = "<group>"; };
+		4F79DF6D21C8FF9B00F1B647 /* TestMsgForwardingObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMsgForwardingObj.m; sourceTree = "<group>"; };
 		4F8936C021C3A0AD00201B02 /* runtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8936C321C3A0AD00201B02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4F8936C421C3A0AD00201B02 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,9 +51,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F79DF6B21C8FF6300F1B647 /* messageForwarding */ = {
+			isa = PBXGroup;
+			children = (
+				4F79DF6C21C8FF9B00F1B647 /* TestMsgForwardingObj.h */,
+				4F79DF6D21C8FF9B00F1B647 /* TestMsgForwardingObj.m */,
+			);
+			path = messageForwarding;
+			sourceTree = "<group>";
+		};
 		4F8936B721C3A0AD00201B02 = {
 			isa = PBXGroup;
 			children = (
+				4F79DF6B21C8FF6300F1B647 /* messageForwarding */,
 				4F8936DE21C3B64700201B02 /* loadVSinitialize */,
 				4F8936DD21C3B64700201B02 /* methodSwizzling */,
 				4F8936D921C3AA5400201B02 /* associatedObject */,
@@ -184,6 +197,7 @@
 				4F8936DC21C3AA7A00201B02 /* NSObject+AssociatedObject.m in Sources */,
 				4F8936C821C3A0AD00201B02 /* ViewController.m in Sources */,
 				4F249DF321C4FDF900E644A5 /* MethodSwizzlingObject.m in Sources */,
+				4F79DF6E21C8FF9B00F1B647 /* TestMsgForwardingObj.m in Sources */,
 				4F8936D321C3A0AF00201B02 /* main.m in Sources */,
 				4F8936C521C3A0AD00201B02 /* AppDelegate.m in Sources */,
 			);

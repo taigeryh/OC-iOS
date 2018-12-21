@@ -5,4 +5,6 @@
 - AFNetworking
 - 消息发送
 
-OS X ABI Mach-O File Format Reference 
+compile time
+ link time 
+ runtime
