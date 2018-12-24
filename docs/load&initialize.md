@@ -1,11 +1,4 @@
-# OC-iOS
-# TODO
-
-- @dynamic
-- AFNetworking
-- 消息发送
-
-OS X ABI Mach-O File Format Reference 
+# Load & Initialize
 
 
 
@@ -25,7 +18,5 @@ A category +load method is called after the class’s own +load method.
 +load():通常用来进行Method Swizzle，尽量避免过于复杂以及不必要的代码
 +initialize():一般用于初始化全局变量或静态变量
 
-作者：SuperMario_Nil
-链接：https://www.jianshu.com/p/ffdefa76e4a2
-來源：简书
-简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
+
+>[简书](https://www.jianshu.com/p/ffdefa76e4a2)

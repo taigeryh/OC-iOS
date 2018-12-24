@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0C06D36821CF89B90067C4FE /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C06D36721CF89B90067C4FE /* Warrior.m */; };
 		0C06D36B21CF89CF0067C4FE /* Diplomat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C06D36A21CF89CF0067C4FE /* Diplomat.m */; };
+		0C06D36F21CFA4180067C4FE /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C06D36E21CFA4180067C4FE /* Father.m */; };
+		0C06D37221CFA4750067C4FE /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C06D37121CFA4750067C4FE /* Son.m */; };
+		0C06D37521CFA4A40067C4FE /* Son+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C06D37421CFA4A40067C4FE /* Son+Load.m */; };
+		0C06D37821CFA4CE0067C4FE /* Son+Initialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C06D37721CFA4CE0067C4FE /* Son+Initialize.m */; };
 		4F249DF321C4FDF900E644A5 /* MethodSwizzlingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F249DF221C4FDF900E644A5 /* MethodSwizzlingObject.m */; };
 		4F79DF6E21C8FF9B00F1B647 /* TestMsgForwardingObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F79DF6D21C8FF9B00F1B647 /* TestMsgForwardingObj.m */; };
 		4F8936C521C3A0AD00201B02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8936C421C3A0AD00201B02 /* AppDelegate.m */; };
@@ -26,6 +30,14 @@
 		0C06D36721CF89B90067C4FE /* Warrior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Warrior.m; sourceTree = "<group>"; };
 		0C06D36921CF89CF0067C4FE /* Diplomat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Diplomat.h; sourceTree = "<group>"; };
 		0C06D36A21CF89CF0067C4FE /* Diplomat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Diplomat.m; sourceTree = "<group>"; };
+		0C06D36D21CFA4180067C4FE /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Father.h; path = messageForwarding/Father.h; sourceTree = SOURCE_ROOT; };
+		0C06D36E21CFA4180067C4FE /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Father.m; path = messageForwarding/Father.m; sourceTree = SOURCE_ROOT; };
+		0C06D37021CFA4750067C4FE /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Son.h; path = messageForwarding/Son.h; sourceTree = SOURCE_ROOT; };
+		0C06D37121CFA4750067C4FE /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Son.m; path = messageForwarding/Son.m; sourceTree = SOURCE_ROOT; };
+		0C06D37321CFA4A40067C4FE /* Son+Load.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Son+Load.h"; path = "messageForwarding/Son+Load.h"; sourceTree = SOURCE_ROOT; };
+		0C06D37421CFA4A40067C4FE /* Son+Load.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Son+Load.m"; path = "messageForwarding/Son+Load.m"; sourceTree = SOURCE_ROOT; };
+		0C06D37621CFA4CE0067C4FE /* Son+Initialize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Son+Initialize.h"; path = "messageForwarding/Son+Initialize.h"; sourceTree = SOURCE_ROOT; };
+		0C06D37721CFA4CE0067C4FE /* Son+Initialize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Son+Initialize.m"; path = "messageForwarding/Son+Initialize.m"; sourceTree = SOURCE_ROOT; };
 		4F249DF121C4FDF900E644A5 /* MethodSwizzlingObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingObject.h; sourceTree = "<group>"; };
 		4F249DF221C4FDF900E644A5 /* MethodSwizzlingObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingObject.m; sourceTree = "<group>"; };
 		4F79DF6C21C8FF9B00F1B647 /* TestMsgForwardingObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMsgForwardingObj.h; sourceTree = "<group>"; };
@@ -57,6 +69,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C06D36C21CFA24A0067C4FE /* loadVSinitialize */ = {
+			isa = PBXGroup;
+			children = (
+				0C06D36D21CFA4180067C4FE /* Father.h */,
+				0C06D36E21CFA4180067C4FE /* Father.m */,
+				0C06D37021CFA4750067C4FE /* Son.h */,
+				0C06D37121CFA4750067C4FE /* Son.m */,
+				0C06D37321CFA4A40067C4FE /* Son+Load.h */,
+				0C06D37421CFA4A40067C4FE /* Son+Load.m */,
+				0C06D37621CFA4CE0067C4FE /* Son+Initialize.h */,
+				0C06D37721CFA4CE0067C4FE /* Son+Initialize.m */,
+			);
+			path = loadVSinitialize;
+			sourceTree = "<group>";
+		};
 		4F79DF6B21C8FF6300F1B647 /* messageForwarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,8 +100,8 @@
 		4F8936B721C3A0AD00201B02 = {
 			isa = PBXGroup;
 			children = (
+				0C06D36C21CFA24A0067C4FE /* loadVSinitialize */,
 				4F79DF6B21C8FF6300F1B647 /* messageForwarding */,
-				4F8936DE21C3B64700201B02 /* loadVSinitialize */,
 				4F8936DD21C3B64700201B02 /* methodSwizzling */,
 				4F8936D921C3AA5400201B02 /* associatedObject */,
 				4F8936C221C3A0AD00201B02 /* runtime */,
@@ -124,13 +151,6 @@
 				4F249DF221C4FDF900E644A5 /* MethodSwizzlingObject.m */,
 			);
 			path = methodSwizzling;
-			sourceTree = "<group>";
-		};
-		4F8936DE21C3B64700201B02 /* loadVSinitialize */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = loadVSinitialize;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,15 +223,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C06D37221CFA4750067C4FE /* Son.m in Sources */,
 				4F8936E121C3B67700201B02 /* UIViewController+Tracking.m in Sources */,
+				0C06D37821CFA4CE0067C4FE /* Son+Initialize.m in Sources */,
 				4F8936DC21C3AA7A00201B02 /* NSObject+AssociatedObject.m in Sources */,
 				0C06D36821CF89B90067C4FE /* Warrior.m in Sources */,
+				0C06D37521CFA4A40067C4FE /* Son+Load.m in Sources */,
 				4F8936C821C3A0AD00201B02 /* ViewController.m in Sources */,
 				4F249DF321C4FDF900E644A5 /* MethodSwizzlingObject.m in Sources */,
 				4F79DF6E21C8FF9B00F1B647 /* TestMsgForwardingObj.m in Sources */,
 				4F8936D321C3A0AF00201B02 /* main.m in Sources */,
 				0C06D36B21CF89CF0067C4FE /* Diplomat.m in Sources */,
 				4F8936C521C3A0AD00201B02 /* AppDelegate.m in Sources */,
+				0C06D36F21CFA4180067C4FE /* Father.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
